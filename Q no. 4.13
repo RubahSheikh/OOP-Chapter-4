@@ -1,0 +1,53 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class automobiles{	
+	
+	private:
+	float miles,gallons,MPG,Total_MPG;
+	public:
+	automobiles(){ 
+	cout<<"constructor\n";
+	
+		
+	
+		}
+	 void getdata(){
+	 	cout<<"Enter miles driven\n";
+	 	cin>>miles;
+		cout<<"Enter gallons used\n";
+		cin>>gallons;
+	 	
+	 } 
+	void setdata(){
+		MPG=miles/gallons;
+		cout<<"MPG this trip\n :"<<MPG;
+		
+		
+		
+		
+	}
+
+};
+int main(){
+	
+	automobiles obj;
+	
+	
+	int counter=0 ;
+	int q;
+	
+	do{
+	
+	obj.getdata();
+	obj.setdata();		
+	counter++;
+	cout<<"\nEnter -1 for quit or press any key for continue= \n";
+	cin>>q;
+	}
+	
+	while(q!=-1);
+	
+	
+}
