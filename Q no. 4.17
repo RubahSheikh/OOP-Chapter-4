@@ -1,0 +1,22 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+main(){
+	int counter=1;
+	int sale;
+	int max=0;
+	while(counter<=10){
+		cout<<"Please enter sales for salesman #"<<counter<<" :";
+		cin>>sale;
+		cout<<"\n";
+		if(max<sale){
+			max=sale;
+		
+			
+		}
+		counter ++;
+		
+	}
+	cout<<"Maximum Sales by a salesman is "<<max;
+}
