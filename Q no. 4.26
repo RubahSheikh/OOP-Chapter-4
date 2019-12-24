@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x, square, c;
+	c = 1;
+
+	cout << "Enter side of a square: ";
+	cin >> x;
+	square = x * x;
+
+	while ( c <= square ) {
+		cout << "*";
+		
+		if ( c % x == 0 )
+			cout << "\n";
+
+
+		c++;
+	}
+
+	cout << endl;
+	return 0;
+}
